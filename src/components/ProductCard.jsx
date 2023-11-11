@@ -1,29 +1,22 @@
-import { Card, CardHeader, Heading, CardBody, Box, Text } from '@chakra-ui/react'
+import { Card, Heading, CardBody, Text, Stack, Image } from '@chakra-ui/react'
 
 export const ProductCard = ({ product }) => {
     return (
-        <Card bg='green' p='2rem' borderRadius='1rem' w='15rem' h='auto'>
-            <CardHeader>
-                <Heading size='md' textTransform='uppercase'>{product.name}</Heading>
-            </CardHeader>
+        <Card maxW='md' minH='md' justifyContent='center' alignItems='center'>
             <CardBody>
-                <Box>
-                    <Heading size='xs'>Descripción</Heading>
-                    <Text pt='2' fontSize='sm'>{product.description}</Text>
-                </Box>
-                <Box>
-                    <Heading size='xs'>Precio</Heading>
-                    <Text pt='2' fontSize='sm'>{product.price}</Text>
-                </Box>
-                <Box>
-                    <Heading size='xs'>Descuento</Heading>
-                    <Text pt='2' fontSize='sm'>{product.sku}</Text>
-                </Box>
-                <Box>
-                    <Heading size='xs'>Stock</Heading>
-                    <Text pt='2' fontSize='sm'>{product.stock}</Text>
-                </Box>
-            </CardBody>
+                <Image
+                               
+                src={product.imgUrl}
+                alt={`image of ${product.name}`}
+                borderRadius='lg'
+                />
+                <Stack mt='6' spacing='3'>
+                    <Heading size='md'>{product.name}</Heading>
+                    <Text>{product.description}</Text>
+                    <Text>Stock: {product.stock}</Text>
+                    <Text color='blue.600' fontSize='2xl'>${product.price}</Text>
+                </Stack>
+            </CardBody>        
         </Card>
     )
 }

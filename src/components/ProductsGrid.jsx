@@ -4,9 +4,9 @@ import { ProductCard } from './ProductCard.jsx'
 
 export const ProductsGrid = ({products}) => {    
     return (
-        <Grid templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)", lg: "repeat(3, 1fr)" }} gap="2rem" justifyContent='center' bg='grey' p='2rem'> 
+        <Grid templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)", lg: "repeat(3, 1fr)" }} gap="2rem" justifyContent='center' bg='grey' p='2rem' m='2rem'> 
             {products.map((product) =>(
-                <GridItem key={product.id}>
+                <GridItem key={product.id} minW='10rem'>
                     <ProductCard product={product} ></ProductCard>
                 </GridItem>         
             ))}

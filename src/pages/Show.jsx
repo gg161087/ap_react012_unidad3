@@ -14,6 +14,6 @@ export const Show = () => {
     },[])
     
     return (
-        <ProductsGrid products={products}></ProductsGrid>     
+        <ProductsGrid products={products}></ProductsGrid>
     )
 }
