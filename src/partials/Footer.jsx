@@ -1,4 +1,6 @@
-import { Text, Box, UnorderedList, ListItem, Link } from '@chakra-ui/react'
+import { Text, Box, UnorderedList, ListItem} from '@chakra-ui/react'
+import { Link as ChakraLink } from '@chakra-ui/react'
+import { Link as ReactRouterLink } from 'react-router-dom'
 
 export const Footer = () => {
     return (
@@ -7,10 +9,10 @@ export const Footer = () => {
                 <Box display='flex' alignItems='center'>
                     <UnorderedList>
                         <ListItem>
-                            <Link href='/'>HOME</Link>
+                            <ChakraLink as={ReactRouterLink}  to='/'>HOME</ChakraLink>
                         </ListItem>
                         <ListItem>
-                            <Link href='/'>ABOUT</Link>                      
+                            <ChakraLink as={ReactRouterLink} to='/about'>ABOUT</ChakraLink> 
                         </ListItem>
                     </UnorderedList>
                 </Box>

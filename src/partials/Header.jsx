@@ -11,8 +11,8 @@ export const Header = () => {
                     <Text bg='white' p='2rem'>LOGO</Text>
                 </Box>
                 <Box display='flex' alignItems='center'>
-                    <ChakraLink as={ReactRouterLink} to='/ap_react012_unidad3/about' p='2rem'>ABOUT</ChakraLink>  
-                    <ChakraLink as={ReactRouterLink}  to='/ap_react012_unidad3/' p='2rem'>HOME</ChakraLink>
+                    <ChakraLink as={ReactRouterLink} to='/about' p='2rem'>ABOUT</ChakraLink>  
+                    <ChakraLink as={ReactRouterLink}  to='/' p='2rem'>HOME</ChakraLink>
                 </Box>
             </Box>
         </Box>
