@@ -9,10 +9,10 @@ export const Footer = () => {
                 <Box display='flex' alignItems='center'>
                     <UnorderedList>
                         <ListItem>
-                            <ChakraLink as={ReactRouterLink}  to='/'>HOME</ChakraLink>
+                            <ChakraLink as={ReactRouterLink}  to='/ap_react012_unidad3/'>HOME</ChakraLink>
                         </ListItem>
                         <ListItem>
-                            <ChakraLink as={ReactRouterLink} to='/about'>ABOUT</ChakraLink> 
+                            <ChakraLink as={ReactRouterLink} to='/ap_react012_unidad3/about'>ABOUT</ChakraLink> 
                         </ListItem>
                     </UnorderedList>
                 </Box>
