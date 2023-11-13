@@ -1,5 +1,6 @@
 import { Text, Box } from '@chakra-ui/react'
 import { Link as ChakraLink } from '@chakra-ui/react'
+import { Link as ReactRouterLink } from 'react-router-dom'
 
 
 export const Header = () => {
@@ -10,8 +11,8 @@ export const Header = () => {
                     <Text bg='white' p='2rem'>LOGO</Text>
                 </Box>
                 <Box display='flex' alignItems='center'>
-                    <ChakraLink href='/ap_react012_unidad3/about' p='2rem'>ABOUT</ChakraLink>  
-                    <ChakraLink href='/ap_react012_unidad3/' p='2rem'>HOME</ChakraLink>
+                    <ChakraLink as={ReactRouterLink} to='/ap_react012_unidad3/about' p='2rem'>ABOUT</ChakraLink>  
+                    <ChakraLink as={ReactRouterLink}  to='/ap_react012_unidad3/' p='2rem'>HOME</ChakraLink>
                 </Box>
             </Box>
         </Box>
